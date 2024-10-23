@@ -1,4 +1,4 @@
-﻿﻿<h1>THỰC HÀNH BACKEND-2</h1>
+﻿﻿<h1>THỰC HÀNH FRONTEND</h1>
 
 **Họ tên: Lê Minh Tiền**
 
