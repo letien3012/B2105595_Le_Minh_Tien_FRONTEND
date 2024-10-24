@@ -6,7 +6,7 @@ import vue from '@vitejs/plugin-vue'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue()
   ],
   resolve: {
     alias: {
@@ -15,5 +15,12 @@ export default defineConfig({
   },
   server: {
     port: 3001,
+    proxy: {
+      "/api": {
+        // Do cổng 3000 chạy khộng được nên em chạy backend ở cổng 3005
+        target: "http://localhost:3005/",
+        changeOrigin: true,
+      },
+    }
   },
 });
